@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitij Pawar | Portfolio</title>
+
+    <!-- Fonts (the site still works with fallback fonts if offline) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Connect the CSS file to this HTML file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top navigation bar -->
+    <header class="navbar">
+        <a class="logo" href="#home">Kshitij Pawar</a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home section -->
+        <section class="hero" id="home">
+            <div class="hero-inner">
+
+                <div class="hero-copy">
+                    <h1>Kshitij<br>Pawar</h1>
+                    <p>Computer Science student, curious builder, and future software engineer.</p>
+                    <a class="btn" href="#contact">Contact me</a>
+                </div>
+
+                <div class="hero-photo-wrap">
+                    <img class="hero-photo" src="assets/profile.jpg" alt="Portrait of Kshitij Pawar">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About and Education section -->
+        <section class="section" id="about">
+            <div class="split">
+                <h2 class="section-heading">About</h2>
+
+                <div class="split-body">
+                    <p class="lead">
+                        Hi! I'm Kshitij, a first-year B.Tech Computer Science student at NIAT in Pune.
+                        I enjoy learning how technology works and turning ideas into practical projects.
+                    </p>
+                    <p>
+                        I'm exploring web development, Python, Generative AI and robotics.
+                        My goal is to grow into a software engineer who builds useful, thoughtful solutions.
+                    </p>
+
+                    <h3 class="subheading">Education</h3>
+
+                    <div class="education-row">
+                        <span class="education-status">Currently pursuing</span>
+                        <div>
+                            <h4>B.Tech – Computer Science Engineering</h4>
+                            <p>NIAT, Pune · First year</p>
+                        </div>
+                    </div>
+
+                    <div class="education-row">
+                        <span class="education-status">Completed</span>
+                        <div>
+                            <h4>Higher Secondary Education (12th)</h4>
+                            <p>Dnyanganga International College</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section class="section section-tint" id="skills">
+            <div class="split">
+                <h2 class="section-heading">Skills</h2>
+
+                <ul class="skills-list">
+                    <li class="skill"><span class="skill-icon">&lt;/&gt;</span> HTML</li>
+                    <li class="skill"><span class="skill-icon">{ }</span> CSS</li>
+                    <li class="skill"><span class="skill-icon">Py</span> Python</li>
+                    <li class="skill"><span class="skill-icon">✧</span> Generative AI</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="section" id="projects">
+            <div class="split">
+                <h2 class="section-heading">Projects</h2>
+
+                <div class="project-list">
+
+                    <article class="project">
+                        <div class="project-visual visual-one" aria-hidden="true">
+                            <span class="visual-glyph">✦</span>
+                            <span class="visual-label">StudySmart</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>StudySmart</h3>
+                            <p>
+                                A student-focused ML prototype exploring how study inputs
+                                can be used to estimate and support learning progress.
+                            </p>
+                            <a class="outline-btn" href="https://github.com/miteshdeore25-sudo"
+                               target="_blank" rel="noopener">View project</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-visual visual-two" aria-hidden="true">
+                            <span class="visual-glyph">✧</span>
+                            <span class="visual-label">MindMate AI</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>MindMate AI</h3>
+                            <p>
+                                An idea for an AI-powered student support experience
+                                focused on study stress and wellbeing awareness.
+                            </p>
+                            <a class="outline-btn" href="https://github.com/miteshdeore25-sudo"
+                               target="_blank" rel="noopener">View project</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section contact-section" id="contact">
+            <div class="split">
+                <h2 class="section-heading">Contact</h2>
+
+                <div class="contact-layout">
+
+                    <div class="contact-details">
+                        <p class="contact-name">Kshitij Pawar</p>
+                        <p><a href="mailto:miteshdeore25@gmail.com">miteshdeore25@gmail.com</a></p>
+                        <p>Pune, India</p>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/mitesh-deore-11080332a/" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="https://github.com/miteshdeore25-sudo" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact form with required fields -->
+                    <form class="contact-form" action="mailto:miteshdeore25@gmail.com"
+                          method="post" enctype="text/plain">
+
+                        <div class="form-row">
+                            <input type="text" name="fullname" placeholder="Full name" aria-label="Full name" required>
+                            <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+                        </div>
+
+                        <input type="text" name="subject" placeholder="Subject" aria-label="Subject" required>
+
+                        <textarea name="message" placeholder="Message" aria-label="Message" rows="5" required></textarea>
+
+                        <button class="btn submit-btn" type="submit">Send message</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom footer -->
+    <footer class="footer">
+        <p>© 2026 Kshitij Pawar. All rights reserved.</p>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/mitesh-deore-11080332a/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/miteshdeore25-sudo" target="_blank" rel="noopener" aria-label="GitHub">●</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+            <a href="https://www.instagram.com/selfmade_mitesh/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+        </div>
+    </footer>
+
+</body>
+</html>
